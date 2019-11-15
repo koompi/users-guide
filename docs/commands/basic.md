@@ -1,5 +1,5 @@
 # Pionux Commands - CLI
-// TODO: format
+[//]: # (TODO: format)
 
 Usage:
 	pi
