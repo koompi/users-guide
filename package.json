@@ -11,8 +11,16 @@
     "lint": "remark .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
   "remarkConfig": {
-    "plugins": ["remark-preset-lint-recommended"]
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
   },
   "repository": {
     "type": "git",
@@ -31,6 +39,7 @@
   "homepage": "https://github.com/cbun097/users-guide#readme",
   "devDependencies": {
     "hads": "^2.0.1",
+    "husky": "^3.0.9",
     "remark-cli": "^7.0.1",
     "remark-lint": "^6.0.5",
     "remark-preset-lint-recommended": "^3.0.3"
