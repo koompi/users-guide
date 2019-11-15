@@ -2,13 +2,12 @@
 
 ## Table of Content
 
-- [Application](../../docs/setup/applications/README.md)
+-   [Application](../../docs/setup/applications/README.md)
   
-- [Bluetooth Setup](../setup/bluetooth.md)
+-   [Bluetooth Setup](../setup/bluetooth.md)
 
-- [Desktop Environnement](.../../desktop-env/README.md)
+-   [Desktop Environnement](.../../desktop-env/README.md)
 
-- [Keyboard](../setup/desktop-env.md)
+-   [Keyboard](../setup/desktop-env.md)
 
-- [Printer](../setup/printer.md)
-  
+-   [Printer](../setup/printer.md)
