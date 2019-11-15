@@ -16,8 +16,7 @@
 ## Contributors
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+// TODO: update icons
 <table>
   <tr>
     <td align="center"><a href="https://kentcdodds.com"><img src="img/rithy_thul.png" width="100px;" alt="Rithy Thul"/><br /><sub><b>Rithy Thul</b></sub></a><br /><a href="#question-kentcdodds" title="Answering Questions">💬</a><a href="https://github.com/all-contributors/all-contributors/commits?author=kentcdodds" title="Documentation">📖</a><a href="#review-kentcdodds" title="Reviewed Pull Requests">👀</a> <a href="#talk-kentcdodds" title="Talks">📢</a></td>
