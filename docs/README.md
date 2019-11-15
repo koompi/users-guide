@@ -1,8 +1,8 @@
 # Table of Contents
 
--   [Commands](commands/cmds.md)
+-   [Commands](commands/basic.md)
 
--   [Contribute](how-to-contribute/README.md)
+-   [Contribute](contribute/README.md)
 
 -   [Installation](installation/README.md)
 
@@ -18,4 +18,4 @@
   
 -   Local Documentation Server [Another Documentation Server - hads](https://github.com/remarkjs/remark-lint)
 
--  Precommit commands [Husky](https://github.com/typicode/husky)
+-   Precommit commands [Husky](https://github.com/typicode/husky)
