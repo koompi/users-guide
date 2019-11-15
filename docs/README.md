@@ -2,6 +2,12 @@
 
 - [Commands](commands/cmds.md)
 
+- [Contribute](how-to-contribute/README.md)
+
 - [Installation](installation/README.md)
 
-- [How to Contribute](how-to-contribute/README.md)
+- [Setup](setup/README.md)
+
+- [Specs](specs/README.md)
+
+- [Troubleshooting](troubleshooting/README.md)
