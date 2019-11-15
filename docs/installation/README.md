@@ -1,1 +1,3 @@
-# How to Install PionuxOs
+# PionuxOs Installation
+
+## Table of Content
