@@ -1,6 +1,6 @@
 # How to install Pionux
 
-## Laptop
+## Laptop /PC
 
 ## Virtualbox
 
