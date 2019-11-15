@@ -11,3 +11,9 @@
 - [Specs](specs/README.md)
 
 - [Troubleshooting](troubleshooting/README.md)
+
+## Features
+
+- Lint for markdown files [remark-lint](https://github.com/remarkjs/remark-lint)
+  
+- Local Documentation Server [Another Documentation Server - hads](https://github.com/remarkjs/remark-lint)
