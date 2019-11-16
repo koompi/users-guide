@@ -2,4 +2,8 @@
 
 ## Table of Content
 
-// TODO: check deeping documentation for desktop
+###  Change Background Wallpaper
+
+### Windows Manager
+
+[//]: # (TODO: check deeping documentation for desktop)
