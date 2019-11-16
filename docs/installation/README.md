@@ -52,4 +52,8 @@ This is the documentation on how to install PionuxOS to your laptop or PC, dual 
 
 -  [Koompi - Installation on VirtualBox](https://www.youtube.com/watch?v=CtsfNA1mlA8&t=1s)
 
+<<<<<<< HEAD
 - [How to Set up KramaOs on Oracle VM VirtualBox](https://www.youtube.com/watch?v=c-KuY5HY-tQ)
+=======
+- [How to Set up KramaOs on Oracle VM VirtualBox](https://www.youtube.com/watch?v=c-KuY5HY-tQ)
+>>>>>>> add general content changes

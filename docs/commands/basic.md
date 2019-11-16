@@ -8,6 +8,8 @@ The **`pi`** which is the shortcut formation of **`pacman`** is one of the major
 
 If you haven't done it yet.[Click here]()
 
+> Note: Make sure you have pi install.
+
 Usage:
 
 ```text
