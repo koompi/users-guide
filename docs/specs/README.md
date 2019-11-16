@@ -2,6 +2,8 @@
 
 ## OS Specs minimum requirement
 
+[//]: # (TODO: ask what the OS minimun requirmement)
+
 ## Koompi Laptop Specs
 
 ### Display

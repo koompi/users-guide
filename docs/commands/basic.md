@@ -3,6 +3,8 @@
 Pi is the official package manager for KOOMPI.  
 Version: 0.0.1
 
+> Note: Make sure you have pi install.
+
 Usage:
 ```
     pi
