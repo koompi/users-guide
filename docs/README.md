@@ -9,8 +9,17 @@
 *   [Installation](installation/README.md)
 
 *   [Setup](setup/README.md)
+    *  [Applications](setup/applications/README.md)
+    *  [Desktop Environnment](setup/desktop-env/README.md)
+    *  [Bluetooth](setup/bluetooth.md)
+    *  [File Management](setup/file-management.md)
+    *  [Keyboard](setup/keyboard.md)
+    *  [Network](setup/network.md)
+    *  [Printer](setup/printer.md)
 
 *   [Specs](specs/README.md)
+    *  [System Information](specs/system-infomation.md)
+
 
 *   [Troubleshooting](troubleshooting/README.md)
 
