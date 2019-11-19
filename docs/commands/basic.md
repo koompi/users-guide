@@ -1,57 +1,100 @@
 # Pionux Commands - CLI
 
-Pi is the official package manager for KOOMPI.  
-Version: 0.0.1
+## Pi or Pacman
+
+The **`pi`** which is the shortcut formation of **`pacman`** is one of the majority features of our System. It is a combination of simple binary package manager with easy-open-source-to-use build system.
+
+> Note: Make sure you have `pi` installed and your `system is fully up to date` before installing.
+
+If you haven't done it yet.[Click here]()
 
 Usage:
-```
-    pi
-    pi <operation> [...]
-    pi <package(s)>
+
+```text
+    $ pi
+    $ pi <operation> [...]
+    $ pi <package(s)>
 ```
 
+> **Noted:** Packages often have optional dependencies which are packages that provide additional functionality to the application but not strictly required for running it. When installing a package, the list of package optionals dependencies will be pop up.e
+
+> **Warning:** When installing packages, avoid refreshing the packages list without updated the system. In practice for running command  do **not** run ```$ pi -Sy package_name``` instead of ``` $ pi -Syu package_name```, as it could lead to dependency issues.
 Basic usage:
-```
-    # Install packages use
-    pi -S <package name> or pi -i <Package name>
 
-    # Uninstall packages
-    pi -R <Package name>
+## Install Packages
+
+To installing a signal package, including the dependencies, follow the following command:
+
+```text
+    $ pi -S <Package name> or pi -i <Package name>
 ```
 
-Special usage to automate the install procedure (Recommend):
+To installing the list of packages:
+
+```sh
+    $ pi -S <Package name1 Package name2 ...>
 ```
-	| yes | pi -S <Package name>  => [Install packages with no confirm] |	
+
+### Installing Package Group
+
+Some packages belong to a **group of packages** that call be installed at the same time. For example as down here:
+
+```sh
+    $ sudo pi -S <Package group name>
+```
+
+To see what inside the package group, run:
+
+```sh
+    $ pi -Sg <Package group name>
+```
+
+## Uninstall packages
+
+```text
+    $ pi -R <Package name>
+```
+
+> **Note:** All operation is required password.Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
+
+Here Special usage to automate the install procedure (Recommend):
+
+```text
+	$ yes | pi -S <Package name> or $ pi -S --noconfirm <Package name> => [Install packages with no confirm] |
 ```
 
 Operations:
-```
-    pi {-h --help}
-    pi {-V --version}
-    pi {-D --database}    # <options> <package(s)>
-    pi {-F --files}       # [options] [package(s)]
-    pi {-Q --query}       # [options] [package(s)]
-    pi {-R --remove}      # [options] <package(s)>
-    pi {-S --sync}        # [options] [package(s)]
-    pi {-T --deptest}     # [options] [package(s)]
-    pi {-U --upgrade}     # [options] <file(s)>
+
+```text
+    $ pi {-h --help}
+    $ pi {-V --version}
+    $ pi {-D --database}   # <options> <package(s)>
+    $ pi{-F --files}       # [options] [package(s)]
+    $ pi{-Q --query}       # [options] [package(s)]
+    $ pi{-R --remove}      # [options] <package(s)>
+    $ pi{-S --sync}        # [options] [package(s)]
+    $ pi{-T --deptest}     # [options] [package(s)]
+    $ pi{-U --upgrade}     # [options] <file(s)>
 ```
 
 New operations:
-```
-    pi {-Y --pi}          # [options] [package(s)]
-    pi {-P --show}        # [options]
-    pi {-G --getpkgbuild} # [package(s)]
+
+```text
+    $ pi {-Y --pi}          # [options] [package(s)]
+    $ pi{-P --show}         # [options]
+    $ pi {-G --getpkgbuild} # [package(s)]
 ```
 
 New options:
-```
+
+```text
     --repo        # Assume targets are from the repositories
     -a --aur      # Assume targets are from the AUR
 ```
 
 Permanent configuration options:
-```
+
+```text
     --save                Causes the following options to be saved back to the
                           config file when used
 
@@ -127,7 +170,8 @@ Permanent configuration options:
 ```
 
 Show specific options:
-```
+
+```text
     -c --complete         # Used for completions
     -d --defaultconfig    # Print default pi configuration
     -g --currentconfig    # Print current pi configuration
@@ -136,13 +180,15 @@ Show specific options:
 ```
 
 Pi specific options:
-```
+
+```text
     -c --clean            # Remove unneeded dependencies
        --gendb            # Generates development package DB used for updating
 ```
 
 getpkgbuild specific options:
-```
+
+```text
     -f --force            # Force download for existing tar packages
 ```
 
