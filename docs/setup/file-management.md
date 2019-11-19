@@ -44,3 +44,9 @@ In the terminal:
 
 ```text
 ```
+
+## Root
+
+What is Root? sudo.
+
+Be careful

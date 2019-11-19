@@ -5,3 +5,5 @@
 ## How to change keyboard
 
 ## Remove keyboard
+
+## Change font
