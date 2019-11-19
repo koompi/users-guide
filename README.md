@@ -56,3 +56,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 -   Pionux on [YouTube](https://www.youtube.com/channel/UC_j4WMcUMt9QsUphFYAsQpg)
 
 ## License
+GNU GPLv3
