@@ -1,8 +1,8 @@
-# Pionux 
+# Pionux User Guide
 
-<div style="text-align:center"><img src="img/pionux.png" /></div>
+<!-- <div style="text-align:center"><img src="img/pionux.png" /></div> -->
 
-[Pionux](pionux.com) is a fully customized and self-customizable Cambodia based open-source operating system software solution for up and coming engineers, inventors, organizers, developers and basically free thinkers in a modern-day post-Microsoft world.
+[Pionux](https://pionux.org/) is a fully customized and self-customizable Cambodia based open-source operating system software solution for up and coming engineers, inventors, organizers, developers and basically free thinkers in a modern-day post-Microsoft world.
 
 ## Documentations
 
