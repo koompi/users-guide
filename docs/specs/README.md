@@ -2,6 +2,8 @@
 
 ## OS Specs minimum requirement
 
+[//]: # (TODO: ask what the OS minimun requirmement)
+
 ## Koompi Laptop Specs
 
 ### Display
@@ -18,3 +20,7 @@
 ### Memory
 
 -   8GB Ram
+
+### For more information
+
+Please have a look to our [Website](koompi.com) for more information about the KOOMPI Laptop and future models

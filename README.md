@@ -8,12 +8,17 @@
 
 ### To run the documentation locally
 
+#### Getting started
+
 ```
 # Install the project
 git clone https://github.com/koompi/users-guide.git 
 cd user-guide
 npm i
+```
 
+#### Start the project
+```
 # Run the documentation locally
 in the terminal: `npm start`
 ```
