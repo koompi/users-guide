@@ -2,7 +2,7 @@
 
 ## Table of Content
 
-###  Change Background Wallpaper
+### Change Background Wallpaper
 
 ### Windows Manager
 

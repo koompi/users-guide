@@ -32,15 +32,15 @@ This is the documentation on how to install PionuxOS to your laptop or PC, dual 
 
 2.  Download the [ISO](https://kosmos.kramaos.org/kosmos).
    
-3. Select `New` .
+3.  Select `New` .
 
-4. Follow the instruction to create your VitrualMachine(VM).
+4.  Follow the instruction to create your VitrualMachine(VM).
 
-5. Start the Machine.
+5.  Start the Machine.
 
-6. Go to your folder and select where you saved your ISO.
+6.  Go to your folder and select where you saved your ISO.
 
-7. Follow the instruction to install the OS to your VirtualMachine.
+7.  Follow the instruction to install the OS to your VirtualMachine.
 
 > Minimum requirement:
 
@@ -50,6 +50,6 @@ This is the documentation on how to install PionuxOS to your laptop or PC, dual 
 
 ### YouTube
 
--  [Koompi - Installation on VirtualBox](https://www.youtube.com/watch?v=CtsfNA1mlA8&t=1s)
+-   [Koompi - Installation on VirtualBox](https://www.youtube.com/watch?v=CtsfNA1mlA8&t=1s)
 
-- [How to Set up KramaOs on Oracle VM VirtualBox](https://www.youtube.com/watch?v=c-KuY5HY-tQ)
+-   [How to Set up KramaOs on Oracle VM VirtualBox](https://www.youtube.com/watch?v=c-KuY5HY-tQ)

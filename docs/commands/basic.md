@@ -6,14 +6,16 @@ Version: 0.0.1
 > Note: Make sure you have pi install.
 
 Usage:
-```
+
+```text
     pi
     pi <operation> [...]
     pi <package(s)>
 ```
 
 Basic usage:
-```
+
+```text
     # Install packages use
     pi -S <package name> or pi -i <Package name>
 
@@ -22,12 +24,14 @@ Basic usage:
 ```
 
 Special usage to automate the install procedure (Recommend):
-```
-	| yes | pi -S <Package name>  => [Install packages with no confirm] |	
+
+```text
+ | yes | pi -S <Package name>  => [Install packages with no confirm] |
 ```
 
 Operations:
-```
+
+```text
     pi {-h --help}
     pi {-V --version}
     pi {-D --database}    # <options> <package(s)>
@@ -40,20 +44,23 @@ Operations:
 ```
 
 New operations:
-```
+
+```text
     pi {-Y --pi}          # [options] [package(s)]
     pi {-P --show}        # [options]
     pi {-G --getpkgbuild} # [package(s)]
 ```
 
 New options:
-```
+
+```text
     --repo        # Assume targets are from the repositories
     -a --aur      # Assume targets are from the AUR
 ```
 
 Permanent configuration options:
-```
+
+```text
     --save                Causes the following options to be saved back to the
                           config file when used
 
@@ -129,7 +136,8 @@ Permanent configuration options:
 ```
 
 Show specific options:
-```
+
+```text
     -c --complete         # Used for completions
     -d --defaultconfig    # Print default pi configuration
     -g --currentconfig    # Print current pi configuration
@@ -138,13 +146,15 @@ Show specific options:
 ```
 
 Pi specific options:
-```
+
+```text
     -c --clean            # Remove unneeded dependencies
        --gendb            # Generates development package DB used for updating
 ```
 
 getpkgbuild specific options:
-```
+
+```text
     -f --force            # Force download for existing tar packages
 ```
 
