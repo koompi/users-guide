@@ -6,7 +6,7 @@ The **`pi`** which is the shortcut formation of **`pacman`** is one of the major
 
 > Note: Make sure you have `pi` installed and your `system is fully up to date` before installing. 
 
-If you haven't done it yet.[Click here]()
+If you haven't done it yet.[Click here](https://github.com/koompi/users-guide/blob/master/commands/pi-installation.md)
 
 Usage:
 ```
