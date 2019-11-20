@@ -4,7 +4,7 @@ To install bluetooth with Pionux.
 
 1.  Open the terminal, by default Pionux comes with Konsole.
 
-2.  Install blueman `sudo pacman -Sy blueman`
+2.  Install blueman `sudo pi -Sy blueman`
 
 3.  Restart bluetooth `sudo systemctl restart bluetooth`
 

@@ -2,9 +2,24 @@
 
 The **`pi`** which is the shortcut formation of **`pacman`** is one of the majority features of our System. It is a combination of simple binary package manager with easy-open-source-to-use build system.
 
-Some very basic commands.
+### How to Install Pi
 
-### To update the System
+
+To install pi package on your system, follow these steps:
+```
+    1. Downloads pi.tar.gz in your Downloads folder
+
+    2. Run tar -xvf pi.tar.gz
+
+    3. In the terminal run cd pi-update
+
+    4. In the terminal do sudo chmod +x run
+
+    5. In the terminal do ./run
+
+    6. Test if pi is installed do pi
+```
+### Update the System
 ```
     $ pi -Syu
 ```
@@ -26,7 +41,7 @@ To update the Database:
 > **Warning:** "When installing packages, avoid refreshing the packages list without updated the system. In practice for running command  do **not** run ```$ pi -Sy package_name``` instead of ``` $ pi -Syu package_name```, as it could lead to dependency issues.
 Basic usage:
 > Note: Make sure you have your `system is fully up to date` before installing. 
-## Install Packages
+### Install Packages
 To installing a signal package, including the dependencies, follow the following command:
 ```  
     $ pi -S <Package name> or pi -i <Package name>
@@ -44,7 +59,7 @@ To see what inside the package group, run:
 ```sh
     $ pi -Sg <Package group name>
 ```
-## Removing packages
+### Removing packages
 If you want to only remove the package, the following command is sufficient:
 ```    
     $ pi -R <Package name>
