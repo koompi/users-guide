@@ -65,5 +65,5 @@ To remove a package, which is required by another package, without removing the 
 
 Here Special usage to automate the install procedure (Recommend):
 ```
-	$ yes | pi -S <Package name> or $ pi -S --noconfirm <Package name> => [Install packages with no confirm] |	
+	$ yes | pi -S <Package name> or $ pi -S --noconfirm <Package name> => [Install packages with no confirm] |
 ```

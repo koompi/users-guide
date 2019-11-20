@@ -1,22 +1,24 @@
 # PionuxOs Installation
 
-This is the documentation on how to install PionuxOS to your laptop or PC, dual boot is also available, and the installation on Virtualbox.
+This is the documentation on how to install PionuxOS to your laptop or PC and the installation on Virtualbox. Dual boot is also available for Pionux.
 
 > Note: The process of installation is different is you are using KramaOS (v1) which is the Pionux (v1) because it is Ubuntu based. Reminder that Pionux is Arch based.
 
-[//]: # (TODO: this is onlty the base. More will be added in the future.)
+[//]: # (TODO: this is only the base. More will be added in the future.)
 
 [//]: # (TODO: Add Screenshots)
 
 ## How to install PionuxOS on your Laptop /PC
 
 #### Create a bootable UBS Key
+
 1.  Get a USB minimum of 4GB.
 2.  Install [Etcher](https://www.balena.io/etcher/).
 3.  Download the [ISO](https://kosmos.kramaos.org/kosmos).
 4.  Follow the instruction on the screen to create your bootable USB key.
 
 #### Install the ISO to your machine
+
 1.  Plug the USB key to your machine.
 2.  Enter the BIOS of your machine.
 3.  Go to the tap `boot`.

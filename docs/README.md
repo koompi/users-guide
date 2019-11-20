@@ -4,9 +4,7 @@
        *  [Basic Commands](commands/basic.md)
        *  [Pi Installation](commands/pi-installation.md)  
 
-*   [Contribute](contribute/README.md)
-       *  [Code of Conduct](contribute/CODE_OF_CONDUCT.md)
-       *  [Maintainers](contribute/MAINTAINERS.md)
+*   [Contribute](contribute/MAINTAINERS.md)
 
 *   [Installation](installation/README.md)
 
@@ -24,7 +22,14 @@
 *   [Specs](specs/README.md)
     *   [System Information](specs/system-infomation.md)
 
+*  [Tutorials](tutorial/README.md)
+
 *   [Troubleshooting](troubleshooting/README.md)
+
+## Help can I improve the documentaion?
+
+Thank your for your interest to help us improve the documentation. You can follow our [contribution guide](../CONTRIBUTING.md)
+on how to get started with our contribution.
 
 ## Features
 
