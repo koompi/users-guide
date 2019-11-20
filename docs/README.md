@@ -1,27 +1,28 @@
 # Table of Contents
 
-*    [Commands](commands/basic.md)
-       *    [Basic Commands](commands/basic.md)
-       *   [Pi Installation](commands/pi-installation.md)  
+*   [Commands](commands/basic.md)
+       *  [Basic Commands](commands/basic.md)
+       *  [Pi Installation](commands/pi-installation.md)  
 
 *   [Contribute](contribute/README.md)
-       *   [Code of Conduct](contribute/CODE_OF_CONDUCT.md)
-       *   [Maintainers](contribute/MAINTAINERS.md)
+       *  [Code of Conduct](contribute/CODE_OF_CONDUCT.md)
+       *  [Maintainers](contribute/MAINTAINERS.md)
 
 *   [Installation](installation/README.md)
 
 *   [Setup](setup/README.md)
     *   [Applications](setup/applications/README.md)
-    *   [Desktop Environnment](setup/desktop-env/README.md)
     *   [Bluetooth](setup/bluetooth.md)
+    *   [Desktop Environnment](setup/desktop-env/README.md)
     *   [File Management](setup/file-management.md)
     *   [Keyboard](setup/keyboard.md)
     *   [Network](setup/network.md)
     *   [Printer](setup/printer.md)
+    *   [Storage](setup/storage.md)
+    *   [User](setup/user.md)
 
 *   [Specs](specs/README.md)
     *   [System Information](specs/system-infomation.md)
-
 
 *   [Troubleshooting](troubleshooting/README.md)
 
