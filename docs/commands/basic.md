@@ -1,6 +1,7 @@
-## Basic Commands in Pionux
+# Basic Commands in Pionux
 
 > Noted: To do all these basic commands below, you must be in the terminal:
+
 
 To show the directory you are currently in:
 ```
@@ -112,7 +113,7 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     Returns 0 if the directory is changed, and if $PWD is set successful
     -P is used; non-zero otherwise.
 ```
-You know, you can also copy file through command.It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
+You know, you can also copy file through command. It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
 ```
     [koompi@koompi-pc ~]$ ls
     Desktop         Save               dconf       mkrepo     
@@ -125,6 +126,71 @@ Let's check in *Documents* directory:
     [koompi@koompi-pc ~]$ ls Documents/
     New.txt
 ```
+"mv" ― You know, you can also move file through command. It takes only two arguments like `cp`:
+```
+    [koompi@koompi-pc ~]$ ls
+    Desktop         Save               dconf       mkrepo     
+    Documents       Videos             Downloads   code    
+    Musics          example.desktop    New.txt
+    [koompi@koompi-pc ~]$ mv New.txt /Documents
+```
+Here in *Documents* directory:
+```
+    [koompi@koompi-pc ~]$ ls Documents/
+    New.txt
+```
+If you want to search for the locateion of the file, you can use **locate**:
+```command
+    $ locate <file_name>
+```
+## Intermediate Commands in Pionux
+
+- The **echo** command helps us move some data, usually text into file.For example, if you want to create a new text file or add to an already made text file, you just need to type in, **“echo Hello, This is Pionux. >> new.txt”**.
+
+- **cat** is the command for showing the contents in file. It is usually used to easily view programs. 
+```
+    [koompi@koompi-pc ~]$ echo Hello, This is Pionux. >> new.txt
+    [koompi@koompi-pc ~]$ cat new.txt
+```
+Output :
+```text
+    Hello, This is Pionux.
+```
+- "**nano**" and "**vi**" are already installed in Pionux command line. The **nano** command is a good text editor that denotes keywords with color and can recognize most languages. And **vi** is simpler than nano.
+- **sudo** — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command. 
+you can change root password by using command below:
+```
+    [koompi@koompi-pc ~]$ sudo passwd
+```
+Output :
+```
+    New password: 
+    Retype new password: 
+    passwd: password updated successfully
+```
+> Tips : When you type the password it was hidden you can't see.
+
+- **df** — We use **df**  command to see the available disk space in each of the partitions in your system. You can add more options like **-h** to see size in gigabyte.
+```
+    [koompi@koompi-pc ~]$ df -h
+```
+Output :
+```
+    ilesystem      Size  Used Avail Use% Mounted on
+    dev             3.9G     0  3.9G   0% /dev
+    run             3.9G   18M  3.9G   1% /run
+    /dev/sdb6        58G   33G   23G  60% /
+    tmpfs           3.9G   85M  3.8G   3% /dev/shm
+    tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+    tmpfs           3.9G   15M  3.9G   1% /tmp
+    tmpfs           3.9G  1.5M  3.9G   1% /etc/pacman.d/gnupg
+    tmpfs           786M   20K  786M   1% /run/user/1001
+```
+----
+
+
+
+
 
 
 
