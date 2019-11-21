@@ -69,7 +69,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 -   Pionux on [Facebook](https://www.facebook.com/koompi/)
 -   Pionux on [Telegram](https://t.me/koompi)
 -   Pionux on [YouTube](https://www.youtube.com/channel/UC_j4WMcUMt9QsUphFYAsQpg)
--   [Email](mailto:pi@koompi.com)
+-   Our team [email](mailto:pi@koompi.com)
 
 ## License
 

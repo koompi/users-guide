@@ -4,7 +4,7 @@ Compatibility:
 
 ## How to add a new printer
 
-1. Go to Printer setting
+1.  Go to Printer setting
 
 [//]: # (Add screenshots)
 

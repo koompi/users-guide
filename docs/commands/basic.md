@@ -1,201 +1,159 @@
-# Pionux Commands - CLI
+## Basic Commands in Pionux
 
-## Pi or Pacman
+> Noted: To do all these basic commands below, you must be in the terminal:
 
-The **`pi`** which is the shortcut formation of **`pacman`** is one of the majority features of our System. It is a combination of simple binary package manager with easy-open-source-to-use build system.
+To show the directory you are currently in:
 
-> Note: Make sure you have `pi` installed and your `system is fully up to date` before installing.
-
-If you haven't done it yet.[Click here]()
-
-> Note: Make sure you have pi install.
-
-Usage:
-
-```text
-    $ pi
-    $ pi <operation> [...]
-    $ pi <package(s)>
+```
+    [koompi@koompi-pc ~]$ pwd
 ```
 
-> **Noted:** Packages often have optional dependencies which are packages that provide additional functionality to the application but not strictly required for running it. When installing a package, the list of package optionals dependencies will be pop up.e
+Output :
 
-> **Warning:** When installing packages, avoid refreshing the packages list without updated the system. In practice for running command  do **not** run ```$ pi -Sy package_name``` instead of ``` $ pi -Syu package_name```, as it could lead to dependency issues.
-Basic usage:
-
-## Install Packages
-
-To installing a signal package, including the dependencies, follow the following command:
-
-```text
-    $ pi -S <Package name> or pi -i <Package name>
+```
+    /home/koompi
 ```
 
-To installing the list of packages:
+Use "ls" for showing all the files in your directory:
 
-```sh
-    $ pi -S <Package name1 Package name2 ...>
+```
+    [koompi@koompi-pc ~]$ ls
 ```
 
-### Installing Package Group
+Output :
 
-Some packages belong to a **group of packages** that call be installed at the same time. For example as down here:
-
-```sh
-    $ sudo pi -S <Package group name>
+```
+    Desktop         Save               dconf       mkrepo     
+    Documents       Videos             Downloads   code    
+    Musics          example.desktop
 ```
 
-To see what inside the package group, run:
+Use "ls -a" to list down even the hidden files:
 
-```sh
-    $ pi -Sg <Package group name>
+```
+    [koompi@koompi-pc ~]$ ls -a
 ```
 
-## Uninstall packages
+Output :
 
-```text
-    $ pi -R <Package name>
+```
+    .               ..                 .mozilla        .viminfo
+    .vscode-oss     Save               dconf           mkrepo   
+    Desktop         Videos             Documents       Downloads           
+    Musics          example.desktop    code
+ ```
+ " cd " ― Use this command for go into other directory.If you are in /home/koompi you want go into *Documents*:
+ ```
+    [koompi@koompi-pc ~]$ pwd
+    /home/koompi
+    [koompi@koompi-pc ~]$ cd Documents/
 ```
 
-> **Note:** All operation is required password.Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
+Output :
 
-Here Special usage to automate the install procedure (Recommend):
-
-```text
-	$ yes | pi -S <Package name> or $ pi -S --noconfirm <Package name> => [Install packages with no confirm] |
+```
+    [koompi@koompi-pc Documents]$
 ```
 
-Operations:
+To create file " Touch ":
 
-```text
-    $ pi {-h --help}
-    $ pi {-V --version}
-    $ pi {-D --database}   # <options> <package(s)>
-    $ pi{-F --files}       # [options] [package(s)]
-    $ pi{-Q --query}       # [options] [package(s)]
-    $ pi{-R --remove}      # [options] <package(s)>
-    $ pi{-S --sync}        # [options] [package(s)]
-    $ pi{-T --deptest}     # [options] [package(s)]
-    $ pi{-U --upgrade}     # [options] <file(s)>
+```
+    $ touch <file name with extension >
 ```
 
-New operations:
+For example :
 
-```text
-    $ pi {-Y --pi}          # [options] [package(s)]
-    $ pi{-P --show}         # [options]
-    $ pi {-G --getpkgbuild} # [package(s)]
+```
+    $ touch Name.txt
 ```
 
-New options:
+To create a directory, you must use:
 
-```text
-    --repo        # Assume targets are from the repositories
-    -a --aur      # Assume targets are from the AUR
+``` 
+    $ mkdir <name of directory you want to put>
 ```
 
-Permanent configuration options:
+For removing the directory, you can use:
 
-```text
-    --save                Causes the following options to be saved back to the
-                          config file when used
-
-    --aururl      <url>     # Set an alternative AUR URL  
-    --builddir    <dir>     # Directory used to download and run PKGBUILDS
-    --editor      <file>    # Editor to use when editing PKGBUILDs
-    --editorflags <flags>   # Pass arguments to editor
-    --makepkg     <file>    # makepkg command to use  
-    --mflags      <flags>   # Pass arguments to makepkg
-    --pacman      <file>    # pacman command to use
-    --tar         <file>    # bsdtar command to use
-    --git         <file>    # Git command to use  
-    --gitflags    <flags>   # Pass arguments to git
-    --gpg         <file>    # gpg command to use  
-    --gpgflags    <flags>   # Pass arguments to gpg
-    --config      <file>    # pacman.conf file to use
-    --makepkgconf <file>    # makepkg.conf file to use
-    --nomakepkgconf         # Use the default makepkg.conf
-
-    --requestsplitn <n>   # Max amount of packages to query per AUR request
-    --completioninterval  # <n> Time in days to to refresh completion cache
-    --sortby    <field>   # Sort AUR results by a specific field during search
-    --answerclean   <a>   # Set a predetermined answer for the clean build menu
-    --answerdiff    <a>   # Set a predetermined answer for the diff menu
-    --answeredit    <a>   # Set a predetermined answer for the edit pkgbuild menu
-    --answerupgrade <a>   # Set a predetermined answer for the upgrade menu
-    --noanswerclean       # Unset the answer for the clean build menu
-    --noanswerdiff        # Unset the answer for the edit diff menu
-    --noansweredit        # Unset the answer for the edit pkgbuild menu
-    --noanswerupgrade     # Unset the answer for the upgrade menu
-    --cleanmenu           # Give the option to clean build PKGBUILDS
-    --diffmenu            # Give the option to show diffs for build files
-    --editmenu            # Give the option to edit/view PKGBUILDS
-    --upgrademenu         # Show a detailed list of updates with the option to skip any
-    --nocleanmenu         # Don't clean build PKGBUILDS
-    --nodiffmenu          # Don't show diffs for build files
-    --noeditmenu          # Don't edit/view PKGBUILDS
-    --noupgrademenu       # Don't show the upgrade menu
-    --askremovemake       # Ask to remove makedepends after install
-    --removemake          # Remove makedepends after install
-    --noremovemake        # Don't remove makedepends after install
-
-    --cleanafter          # Remove package sources after successful install
-    --nocleanafter        # Do not remove package sources after successful build
-    --bottomup            # Shows AUR's packages first and then repository's
-    --topdown             # Shows repository's packages first and then AUR's
-
-    --devel               # Check development packages during sysupgrade
-    --nodevel             # Do not check development packages
-    --gitclone            # Use git clone for PKGBUILD retrieval
-    --nogitclone          # Never use git clone for PKGBUILD retrieval
-    --rebuild             # Always build target packages
-    --rebuildall          # Always build all AUR packages
-    --norebuild           # Skip package build if in cache and up to date
-    --rebuildtree         # Always build all AUR packages even if installed
-    --redownload          # Always download pkgbuilds of targets
-    --noredownload        # Skip pkgbuild download if in cache and up to date
-    --redownloadall       # Always download pkgbuilds of all AUR packages
-    --provides            # Look for matching providers when searching for packages
-    --noprovides          # Just look for packages by pkgname
-    --pgpfetch            # Prompt to import PGP keys from PKGBUILDs
-    --nopgpfetch          # Don't prompt to import PGP keys
-    --useask              # Automatically resolve conflicts using pacman's ask flag
-    --nouseask            # Confirm conflicts manually during the install
-    --combinedupgrade     # Refresh then perform the repo and AUR upgrade together
-    --nocombinedupgrade   # Perform the repo upgrade and AUR upgrade separately
-
-    --sudoloop            # Loop sudo calls in the background to avoid timeout
-    --nosudoloop          # Do not loop sudo calls in the background
-
-    --timeupdate          # Check packages' AUR page for changes during sysupgrade
-    --notimeupdate        # Do not check packages' AUR page for changes
+```
+    $ rmdir <name of directory you want to delete>
 ```
 
-Show specific options:
+> Noted : This command only working when your directory is empty.
 
-```text
-    -c --complete         # Used for completions
-    -d --defaultconfig    # Print default pi configuration
-    -g --currentconfig    # Print current pi configuration
-    -s --stats            # Display system package statistics
-    -w --news             # Print arch news
+To delete directory or files, "rm" it is:
+
+```
+    $ rm <file's name or directory's name>
 ```
 
-Pi specific options:
+> Tips : Not Strongly Recommended.
+>
+> Warning : Not only empty directory or file, but also everything!!!
 
-```text
-    -c --clean            # Remove unneeded dependencies
-       --gendb            # Generates development package DB used for updating
+If you cant't delete, you can use command below to force remove:
+
+```
+    $ rm -rf <directory or files's name>
 ```
 
-getpkgbuild specific options:
+Need some help with commands, this would be useful:
 
-```text
-    -f --force            # Force download for existing tar packages
+```
+    $ man cd or $ cd --help
+```
+(" cd ") is the command you want to know more info.
+Output :
+```
+cd: cd [-L|[-P [-e]] [-@]] [dir]
+    Change the shell working directory.
+    
+    Change the current directory to DIR.  The default DIR is the value 
+    HOME shell variable.
+    
+    The variable CDPATH defines the search path for the directory conta
+    DIR.  Alternative directory names in CDPATH are separated by a colo
+    A null directory name is the same as the current directory.  If DIR
+    with a slash (/), then CDPATH is not used.
+    
+    If the directory is not found, and the shell option `cdable_vars' i
+    the word is assumed to be  a variable name.  If that variable has a
+    its value is used for DIR.
+    
+    Options:
+      -L        force symbolic links to be followed: resolve symbolic
+                links in DIR after processing instances of `..'
+      -P        use the physical directory structure without following
+                symbolic links: resolve symbolic links in DIR before
+                processing instances of `..'
+      -e        if the -P option is supplied, and the current working
+                directory cannot be determined successfully, exit with
+                a non-zero status
+      -@        on systems that support it, present a file with extende
+                attributes as a directory containing the file attribute
+    
+    The default is to follow symbolic links, as if `-L' were specified.
+    `..' is processed by removing the immediately previous pathname com
+    back to a slash or the beginning of DIR.
+
+    Exit Status:
+    Returns 0 if the directory is changed, and if $PWD is set successful
+    -P is used; non-zero otherwise.
 ```
 
-> **Note**:
-If no arguments are provided 'pi -Syu' will be performed
-If no operation is provided -Y will be assumed
+You know, you can also copy file through command.It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
 
-Developed by @LyhourChhen
+```
+    [koompi@koompi-pc ~]$ ls
+    Desktop         Save               dconf       mkrepo
+    Documents       Videos             Downloads   code
+    Musics          example.desktop    New.txt
+    [koompi@koompi-pc ~]$ cp New.txt /Documents
+```
+
+Let's check in *Documents* directory:
+
+```
+    [koompi@koompi-pc ~]$ ls Documents/
+    New.txt
+```

@@ -4,7 +4,7 @@
        *  [Basic Commands](commands/basic.md)
        *  [Pi Installation](commands/pi-installation.md)  
 
-*   [Contribute](contribute/MAINTAINERS.md)
+*   [Contribute](contributor/MAINTAINERS.md)
 
 *   [Installation](installation/README.md)
 
@@ -22,7 +22,7 @@
 *   [Specs](specs/README.md)
     *   [System Information](specs/system-infomation.md)
 
-*  [Tutorials](tutorial/README.md)
+*   [Tutorials](tutorial/README.md)
 
 *   [Troubleshooting](troubleshooting/README.md)
 

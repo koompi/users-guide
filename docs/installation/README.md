@@ -10,14 +10,14 @@ This is the documentation on how to install PionuxOS to your laptop or PC and th
 
 ## How to install PionuxOS on your Laptop /PC
 
-#### Create a bootable UBS Key
+### Create a bootable UBS Key
 
 1.  Get a USB minimum of 4GB.
 2.  Install [Etcher](https://www.balena.io/etcher/).
 3.  Download the [ISO](https://kosmos.kramaos.org/kosmos).
 4.  Follow the instruction on the screen to create your bootable USB key.
 
-#### Install the ISO to your machine
+### Install the ISO to your machine
 
 1.  Plug the USB key to your machine.
 2.  Enter the BIOS of your machine.
