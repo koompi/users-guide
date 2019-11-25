@@ -28,31 +28,44 @@ in the terminal: `npm start`
 
 ## Features
 
-[//]: # (TODO: ask bong Brilliant)
+-   Plasma by KDE: A continuously updated Plasma desktop.
+-   Bleeding edge applications: The latest versions of your favorite applications.
+-   Stable core: A periodically updated core system provides stability.
+-   One-time installation: Set up your system once, and you will receive all the latest changes by keeping it updated.
 
 ### Screenshots
 
-<img src="img/pionux-desktop.png" alt="pionux desktop" width="400"/>
+<div style="float:left;margin-right:1em">
+<img src="img/pionux-desktop.png" alt="pionux desktop" width="300"/>
+<p align="center">Pionux Desktop</p>
+</div>
+<div>
+<img src="https://cdn.pling.com/img/8/4/8/d/ba5a229167eebedbfa2eec822732158e25d7.png" alt="pionux theme" width="300">
+<p align="center">Pionux Theme</p>
+</div>
 
 ### Goals
 
-[//]: # (TODO: ask bong Rithy)
+Linux is taking the world slowly. One day, will be like Tsunami. We want ASEAN to have an OS for their communities' need; schools, enterprises, and gov't alike.  
+
+We have started the foundation with #KOOMPI and its #PionuxOS. We are more than happy to help community around the region kick started as well.
 
 ## Community
 
 -   Pionux OS on [Github](https://github.com/pionux/pionuxos)
--   Pionux [Repo]()
+-   Pionux [Repo](https://repo.pionux.org/iso/x86_64/)
 -   Pionux [Website](https://pionux.org/)
 
 ## FAQs
 
-[//]: # (TODO: ask bong Brilliant)
+**Which distro Pionux is based of?**  
+Pionux is based on Arch. Just because Arch is more fun and a lot more to learn.
+
 
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-[//]: # (TODO: update icons, add more ask bong Rithy)
 <table>
 <tr>
     <td align="center"><a href="https://github.com/rithythul"><img src="img/rithy_thul.png" width="85px;" alt="Rithy Thul"/><br /><sub><b>Rithy Thul</b></sub></a><br /><a href="#question-kentcdodds" title="Answering Questions">💬</a><a href="https://github.com/all-contributors/all-contributors/commits?author=kentcdodds" title="Documentation">📖</a><a href="#review-kentcdodds" title="Reviewed Pull Requests">👀</a> <a href="#talk-kentcdodds" title="Talks">📢</a></td>
