@@ -1,6 +1,10 @@
 # Pionux
 
-<div class="center"><img src="img/pionux.png" /></div>
+<p align="center">
+  <a href="http://pionux.org">
+    <img width="200" src="img/pionux.png">
+  </a>
+</p>
 
 [Pionux](pionux.com) is a fully customized and self-customizable Cambodia based open-source operating system software solution for up and coming engineers, inventors, organizers, developers and basically free thinkers in a modern-day post-Microsoft world.
 
@@ -26,6 +30,8 @@ npm i
 in the terminal: `npm start`
 ```
 
+Open your browser and visit [http://localhost:4040/](http://localhost:4040/)
+
 ## Features
 
 -   Plasma by KDE: A continuously updated Plasma desktop.
@@ -35,14 +41,16 @@ in the terminal: `npm start`
 
 ### Screenshots
 
+<center>
 <div style="float:left;margin-right:1em">
-<img src="img/pionux-desktop.png" alt="pionux desktop" width="300"/>
+<img src="img/pionux-desktop.png" alt="pionux desktop" width="100%"/>
 <p align="center">Pionux Desktop</p>
 </div>
 <div>
-<img src="https://cdn.pling.com/img/8/4/8/d/ba5a229167eebedbfa2eec822732158e25d7.png" alt="pionux theme" width="300">
+<img src="https://cdn.pling.com/img/8/4/8/d/ba5a229167eebedbfa2eec822732158e25d7.png" alt="pionux theme" width="100%">
 <p align="center">Pionux Theme</p>
 </div>
+</center>
 
 ### Goals
 
