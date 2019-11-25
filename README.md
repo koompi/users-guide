@@ -1,10 +1,10 @@
-# Pionux
-
 <p align="center">
   <a href="http://pionux.org">
-    <img width="200" src="img/pionux.png">
+    <img width="300" src="img/pionux.png">
   </a>
 </p>
+
+---
 
 [Pionux](pionux.com) is a fully customized and self-customizable Cambodia based open-source operating system software solution for up and coming engineers, inventors, organizers, developers and basically free thinkers in a modern-day post-Microsoft world.
 
