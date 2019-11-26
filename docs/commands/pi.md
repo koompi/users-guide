@@ -44,37 +44,37 @@ Basic usage:
 ### Install Packages
 To installing a signal package, including the dependencies, follow the following command:
 ```  
-    $ pi -S <Package name> or pi -i <Package name>
+    # pi -S <Package name> or pi -i <Package name>
 ```
 To installing the list of packages:
-```sh
-    $ pi -S <Package name1 Package name2 ...>
+```
+    # pi -S <Package name1 Package name2 ...>
 ```
 ### Installing Package Group
 Some packages belong to a **group of packages** that call be installed at the same time. For example as down here:
-```sh
-    $ sudo pi -S <Package group name>
+```
+    # pi -S <Package group name>
 ```
 To see what inside the package group, run:
-```sh
-    $ pi -Sg <Package group name>
+```
+    # pi -Sg <Package group name>
 ```
 ### Removing packages
 If you want to only remove the package, the following command is sufficient:
 ```    
-    $ pi -R <Package name>
+    # pi -R <Package name>
 ```
 To remove the package and those of its dependencies that aren’t needed by any other application, do
 ```
-    $ pi -Rs <Package name>
+    # pi -Rs <Package name>
 ```
 To remove a package, its dependencies and all the packages that depend on the target package:
 ```
-    $ pi -Rsc <Package name>
+    # pi -Rsc <Package name>
 ```
 To remove a package, which is required by another package, without removing the dependent package:
 ```
-    $ pi -Rdd <Package name>
+    # pi -Rdd <Package name>
 ```
 > **Note:** All operation is required password.Then if you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your operation.
 
@@ -82,6 +82,123 @@ Here Special usage to automate the install procedure (Recommend):
 ```
 	$ yes | pi -S <Package name> or $ pi -S --noconfirm <Package name> => [Install packages with no confirm] |	
 ```
+
+### Pi Querying Package database
+```text
+    $ pi -Q      #queries the local package database
+    $ pi -s      #sync database
+    $ pi -F      #files database
+```
+For more option about querying:
+```
+    $ pi -Q --help
+```
+Options:
+```text
+-b, --dbpath <path>  set an alternate database location
+  -c, --changelog      view the changelog of a package
+  -d, --deps           list packages installed as dependencies [filter]
+  -e, --explicit       list packages explicitly installed [filter]
+  -g, --groups         view all members of a package group
+  -i, --info           view package information (-ii for backup files)
+  -k, --check          check that package files exist (-kk for file properties)
+  -l, --list           list the files owned by the queried package
+  -m, --foreign        list installed packages not found in sync db(s) [filter]
+  -n, --native         list installed packages only found in sync db(s) [filter]
+  -o, --owns <file>    query the package that owns <file>
+  -p, --file <package> query a package file instead of the database
+  -q, --quiet          show less information for query and search
+  -r, --root <path>    set an alternate installation root
+  -s, --search <regex> search locally-installed packages for matching strings
+  -t, --unrequired     list packages not (optionally) required by any
+                       package (-tt to ignore optdepends) [filter]
+  -u, --upgrades       list outdated packages [filter]
+  -v, --verbose        be verbose
+      --arch <arch>    set an alternate architecture
+      --cachedir <dir> set an alternate package cache location
+      --color <when>   colorize the output
+      --config <path>  set an alternate configuration file
+      --confirm        always ask for confirmation
+      --debug          display debug messages
+      --disable-download-timeout
+                       use relaxed timeouts for download
+      --gpgdir <path>  set an alternate home directory for GnuPG
+      --hookdir <dir>  set an alternate hook location
+      --logfile <path> set an alternate log file
+      --noconfirm      do not ask for any confirmation
+      --sysroot        operate on a mounted guest system (root-only)
+```
+pi also can search for packages in the database (package_name and descriptions):
+```
+`$ pi -Ss String
+```
+
+<p style="color:#E13814;">Warning :</p>
+
+> Sometimes, -s's builtin ERE (Extended Regular Expressions) can cause a lot of unwanted results, so it has to be limited to match the package name only; not the description nor any other field:
+
+Example :
+```
+    $ pi -Ss '^vim-'
+```
+To Search for already installed package:
+```
+    $ pi -Qs String1 String2 ...
+```
+To display extensive information about a given package:
+```
+    $ pi -F String1 String2
+```
+<p style="color:#1493E1;">Tips :</p>
+
+>Passing two `-i` flags will also display the list of backup files and their modification states:
+```
+    $ pi -Qii package_name
+```
+To verify the presence of the files installed by a package:
+```
+    $ pi -Qk package_name
+```
+<p style="color:#1493E1;">Tips :</p>
+
+>Passing the `k` flag twice will perform a more thorough check.
+
+### Cleaning the Package cache
+Pi stores its downloaded packages in `/var/cache/pacman/pkg/` and does not remove the old or uninstalled versions automatically. This has some advantages:
+
+1. It allows to **downgrade** a package without the need to retrieve the previous version through other means, such as the **Arch Linux Archive.**
+2. A package that has been uninstalled can easily be reinstalled directly from the cache folder, not requiring a new download from the repository.
+However, it is necessary to deliberately clean up the cache periodically to prevent the folder to grow indefinitely in size.
+
+The paccache script, provided within the `pacman-contrib` package, deletes all cached versions of installed and uninstalled packages, except for the most recent 3, by default:
+```
+    # paccache -r
+```
+
+<p style="color:#1493E1;">Tips :</p>
+
+**Enable** and **start** `paccache.timer` to discard unused packages weekly.
+>You can create a `hook` to run this automatically after every pi transaction.
+
+For more options aboout paccache use :
+```
+    # paccache -h
+```
+*Pacman* also has some built-in options to clean the cache and the leftover database files from repositories which are no longer listed in the configuration file `/etc/pacman.conf`. 
+However *pacman* does not offer the possibility to keep a number of past versions and is therefore more aggressive than paccache default options.
+
+To remove all the cached packages that are not currently installed, and the unused sync database, execute:
+```
+    # pi -Sc
+```
+
+To remove all files from the cache, use the clean switch twice, this is the most aggressive approach and will leave nothing in the cache folder:
+```
+    # pi -Scc
+```
+<p style="color:#E13814;">Warning :</p>
+
+>One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.
 
 Operations:
 

@@ -1,8 +1,8 @@
 # Table of Contents
 
 *    [Commands](commands/basic.md)
-       *    [Basic Commands](commands/basic_pi.md)
-       *   [Pi Installation](commands/pi-installation.md)  
+       *    [Basic Commands](commands/basic.md)
+       *   [Pi](commands/pi.md)  
 
 *   [Contribute](contribute/README.md)
        *   [Code of Conduct](contribute/CODE_OF_CONDUCT.md)
