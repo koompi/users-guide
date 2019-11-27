@@ -4,28 +4,39 @@
 
 
 To show the directory you are currently in:
+
 ```
     [koompi@koompi-pc ~]$ pwd
 ```
+
 Output :
+
 ```
     /home/koompi
 ```
+
 Use "ls" for showing all the files in your directory:
+
 ```
     [koompi@koompi-pc ~]$ ls
 ```
+
 Output :
+
 ```
     Desktop         Save               dconf       mkrepo     
     Documents       Videos             Downloads   code    
     Musics          example.desktop
 ```
+
 Use "ls -a" to list down even the hidden files:
+
 ```
     [koompi@koompi-pc ~]$ ls -a
 ```
+
 Output :
+
 ```
     .               ..                 .mozilla        .viminfo
     .vscode-oss     Save               dconf           mkrepo   
@@ -38,40 +49,57 @@ Output :
     /home/koompi
     [koompi@koompi-pc ~]$ cd Documents/
 ```
+
 Output :
+
 ```
     [koompi@koompi-pc Documents]$
 ```
+
 To create file " Touch ":
+
 ```
     $ touch <file name with extension >
 ```
+
 For example :
+
 ```
     $ touch Name.txt
 ```
+
 To create a directory, you must use:
+
 ``` 
     $ mkdir <name of directory you want to put>
 ```
+
 For removing the directory, you can use:
+
 ```
     $ rmdir <name of directory you want to delete>
 ```
+
 > Noted : This command only working when your directory is empty.
+
 To delete directory or files, "rm" it is:
+
 ```
     $ rm <file's name or directory's name>
 ```
+
 > Tips : Not Strongly Recommended.
 >
 > Warning : Not only empty directory or file, but also everything!!!
+
 If you cant't delete, you can use command below to force remove:
 
 ```
     $ rm -rf <directory or files's name>
 ```
+
 Need some help with commands, this would be useful:
+
 ```
     $ man cd or $ cd --help
 ```
@@ -108,24 +136,31 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     The default is to follow symbolic links, as if `-L' were specified.
     `..' is processed by removing the immediately previous pathname com
     back to a slash or the beginning of DIR.
-    
+
     Exit Status:
     Returns 0 if the directory is changed, and if $PWD is set successful
     -P is used; non-zero otherwise.
 ```
-You know, you can also copy file through command. It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
+
+
+You know, you can also copy file through command.It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
+
+
 ```
     [koompi@koompi-pc ~]$ ls
-    Desktop         Save               dconf       mkrepo     
-    Documents       Videos             Downloads   code    
+    Desktop         Save               dconf       mkrepo
+    Documents       Videos             Downloads   code
     Musics          example.desktop    New.txt
     [koompi@koompi-pc ~]$ cp New.txt /Documents
 ```
+
 Let's check in *Documents* directory:
+
 ```
     [koompi@koompi-pc ~]$ ls Documents/
     New.txt
 ```
+
 "mv" ― You know, you can also move file through command. It takes only two arguments like `cp`:
 ```
     [koompi@koompi-pc ~]$ ls
@@ -186,24 +221,3 @@ Output :
     tmpfs           3.9G  1.5M  3.9G   1% /etc/pacman.d/gnupg
     tmpfs           786M   20K  786M   1% /run/user/1001
 ```
-----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
