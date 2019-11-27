@@ -1,14 +1,11 @@
 # Table of Contents
 
-<<<<<<< HEAD
 *    [Commands](commands/basic.md)
-       *    [Basic Commands](commands/basic.md)
-       *   [Pi](commands/pi.md)  
-=======
-*   [Commands](commands/basic.md)
-       *  [Basic Commands](commands/basic.md)
-       *  [Pi Installation](commands/pi-installation.md)  
->>>>>>> 924817c32cc1b7d3cf69144562a2b3e7626a1045
+       *   [Basic Commands](commands/basic.md)
+       *   [Package Commands](commands/package.md)
+       *   [Pi Installation Commands](commands/pi-installation.md)
+       *   [Pi](commands/pi.md)
+       *   [Root](commands/Rooting.md)  
 
 *   [Contribute](contributor/MAINTAINERS.md)
 
