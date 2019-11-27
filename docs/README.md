@@ -23,7 +23,8 @@
     *   [User](setup/user.md)
 
 *   [Specs](specs/README.md)
-    *   [System Information](specs/system-infomation.md)
+
+*   [System Information](specs/system-infomation.md)
 
 *   [Tutorials](tutorial/README.md)
 

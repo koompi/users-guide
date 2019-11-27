@@ -141,13 +141,9 @@ cd: cd [-L|[-P [-e]] [-@]] [dir]
     Returns 0 if the directory is changed, and if $PWD is set successful
     -P is used; non-zero otherwise.
 ```
-<<<<<<< HEAD
+
 You know, you can also copy file through command. It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
-=======
 
-You know, you can also copy file through command.It takes only two arguments: The first is the location of the file to be copied, the second is where to copy.
-
->>>>>>> 924817c32cc1b7d3cf69144562a2b3e7626a1045
 ```
     [koompi@koompi-pc ~]$ ls
     Desktop         Save               dconf       mkrepo
@@ -162,7 +158,7 @@ Let's check in *Documents* directory:
     [koompi@koompi-pc ~]$ ls Documents/
     New.txt
 ```
-<<<<<<< HEAD
+
 "mv" ― You know, you can also move file through command. It takes only two arguments like `cp`:
 ```
     [koompi@koompi-pc ~]$ ls
@@ -224,25 +220,3 @@ Output :
     tmpfs           786M   20K  786M   1% /run/user/1001
 ```
 ----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-=======
->>>>>>> 924817c32cc1b7d3cf69144562a2b3e7626a1045
