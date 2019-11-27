@@ -1,6 +1,6 @@
 # Printer
 
-Combatibility: 
+Compatibility:
 
 ## How to add a new printer
 
