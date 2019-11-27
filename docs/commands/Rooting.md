@@ -1,4 +1,4 @@
-# Roots
+# Root
 
 The **root** account on a Pionux computer is the account with full privileges. Root access is often necessary for performing commands in PionuxOS, especially commands that affect system files. Because root is so powerful, it's recommended to only request root access when necessary, as opposed to logging in as the root user. This can help prevent accidental damage to important system files.
 
