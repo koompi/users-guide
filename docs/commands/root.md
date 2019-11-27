@@ -10,15 +10,15 @@ If you get an "authentication error" message, your root account is likely locked
 1. **Check the command prompt**. When you are logged in as root, the command prompt should end with `#` instead of `$`.
 1. Now you can use any commands that required root.
 
-## LogOut of Root
-You can **LogOut of Root** by two ways:
-First Way:
+## Logout of Root
+You can **Logout of Root** by two ways:
+First Way,Type:
 ```
-    typing # exit
+   # exit
 ```
-Second Way:
+Second Way,Press:
 ```
-    Pressing CTRL+D
+     CTRL+D
 ```
 ## Unlocking the Root Account
 1. **Unlock the root account (PionuxOS)**. PionuxOS locks the root account so that the average user can't access it. This is done because root access is rarely necessary when using the `sudo` command (see the previous section). Unlocking the root account will allow you to log in as root.

@@ -4,7 +4,7 @@
        *   [Basic Commands](commands/basic.md)
        *   [Package Commands](commands/package.md)
        *   [Pi Installation Commands](commands/pi-installation.md)
-       *   [Pi](commands/pi.md)
+       *   [Pi Commands](commands/pi.md)
        *   [Root](commands/Rooting.md)  
 
 *   [Contribute](contributor/MAINTAINERS.md)

@@ -51,39 +51,35 @@ Output :
 ```
 
 Output :
-
+basic.md
 ```
     [koompi@koompi-pc Documents]$
 ```
-
-To create file " Touch ":
-
+### touch
+To create file " touch ":
 ```
     $ touch <file name with extension >
 ```
-
 For example :
-
 ```
     $ touch Name.txt
 ```
+### mkdir
 
 To create a directory, you must use:
-
 ``` 
     $ mkdir <name of directory you want to put>
 ```
 
 For removing the directory, you can use:
-
 ```
     $ rmdir <name of directory you want to delete>
 ```
 
 > Noted : This command only working when your directory is empty.
 
+### rm
 To delete directory or files, "rm" it is:
-
 ```
     $ rm <file's name or directory's name>
 ```
@@ -93,16 +89,17 @@ To delete directory or files, "rm" it is:
 > Warning : Not only empty directory or file, but also everything!!!
 
 If you cant't delete, you can use command below to force remove:
-
 ```
     $ rm -rf <directory or files's name>
 ```
 
 Need some help with commands, this would be useful:
-
 ```
     $ man cd or $ cd --help
 ```
+
+### cd
+
 (" cd ") is the command you want to know more info.
 Output :
 ```
@@ -158,7 +155,7 @@ Let's check in *Documents* directory:
     [koompi@koompi-pc ~]$ ls Documents/
     New.txt
 ```
-
+### mv
 "mv" ― You know, you can also move file through command. It takes only two arguments like `cp`:
 ```
     [koompi@koompi-pc ~]$ ls
@@ -180,6 +177,8 @@ If you want to search for the locateion of the file, you can use **locate**:
 
 - The **echo** command helps us move some data, usually text into file.For example, if you want to create a new text file or add to an already made text file, you just need to type in, **“echo Hello, This is Pionux. >> new.txt”**.
 
+### Cat
+
 - **cat** is the command for showing the contents in file. It is usually used to easily view programs. 
 ```
     [koompi@koompi-pc ~]$ echo Hello, This is Pionux. >> new.txt
@@ -189,7 +188,11 @@ Output :
 ```text
     Hello, This is Pionux.
 ```
+### nano
+
 - "**nano**" and "**vi**" are already installed in Pionux command line. The **nano** command is a good text editor that denotes keywords with color and can recognize most languages. And **vi** is simpler than nano.
+
+### sudo
 - **sudo** — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command. 
 you can change root password by using command below:
 ```
@@ -202,7 +205,7 @@ Output :
     passwd: password updated successfully
 ```
 > Tips : When you type the password it was hidden you can't see.
-
+### df
 - **df** — We use **df**  command to see the available disk space in each of the partitions in your system. You can add more options like **-h** to see size in gigabyte.
 ```
     [koompi@koompi-pc ~]$ df -h
@@ -219,4 +222,57 @@ Output :
     tmpfs           3.9G  1.5M  3.9G   1% /etc/pacman.d/gnupg
     tmpfs           786M   20K  786M   1% /run/user/1001
 ```
+
+### grep
+
+The grep command which stands for “global regular expression print,” processes text line by line and prints any lines which match a specified pattern. The grep command is used to search text or searches the given file for lines containing a match to the given strings or words. By default, grep displays the matching lines. Use grep to search for lines of text that match one or many regular expressions, and outputs only the matching lines. Grep is considered to be one of the most useful commands on Pionux and Linux operating systems. `grep` is a powerful file pattern searcher in Pionux and Linux. If it is not installed on your system, you can easily install it via your package manager.For installing grep in your system, please use the following command.
+```
+    $ pi -S grep
+```
+
+#### Using grep for search files
+
+To search /etc/passwd file for the user koompi, enter the following command.
+```
+    $ grep koompi /etc/passwd
+```
+Where,
+`/etc/passwd` is the directory you want to search in
+
+You can force grep to ignore word case i.e match koompi, KOOMPI, Koompi and all other combination with the -i option:
+```
+    $ grep -i “koompi” 
+```
+
+If you want to search for a word, and avoid matching substrings use ‘-w ‘option. Just doing a normal search will show all the lines. The following example is the regular grep where it is searching for “is”. When you search for “is”, without any option it will show out “is”, “his”, “this” and everything which has the substring “is”.
+
+```
+    $ grep -i “is” samplefile
+
+    THIS LETTER IS THE 1ST UPPER CASE LETTER IN THIS LINE.
+
+    this letter is the 1st lower case letter in this LINE.
+
+    This Line Has All Its First Character Of The Word With Upper Case.
+
+    Two lines above this line is empty.
+
+    And this is the last line.
+```
+
+The following example is the WORD grep where it is searching only for the word “is”. Please note that this output does not contain the line “This Line Has All Its First Character Of The Word With Upper Case”, even though “is” is there in the “This”, as the following is looking only for the word “is” and not for “this”.
+```
+    grep -iw “is” samplefile
+
+    THIS LETTER IS THE 1ST UPPER CASE LINE IN THIS FILE.
+
+    this letter is the 1st lower case letter in this line.
+
+    Two lines above this line is empty.
+
+    And this is the last line
+```
+
+If you need any further assistance please contact our support department.
+
 ----
