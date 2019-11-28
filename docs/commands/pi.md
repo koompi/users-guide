@@ -2,7 +2,7 @@
 
 The **`pi`** which is the shortcut formation of **`pacman`** is one of the majority features of our System. It is a combination of simple binary package manager with easy-open-source-to-use build system.
 
-### How to Install Pi
+### How to Install Pi ?
 
 
 To install pi package on your system, follow these steps:
@@ -59,7 +59,7 @@ To see what inside the package group, run:
 ```
     # pi -Sg <Package group name>
 ```
-### Removing packages
+### Removing Packages
 If you want to only remove the package, the following command is sufficient:
 ```    
     # pi -R <Package name>
@@ -83,7 +83,7 @@ Here Special usage to automate the install procedure (Recommend):
 	$ yes | pi -S <Package name> or $ pi -S --noconfirm <Package name> => [Install packages with no confirm] |	
 ```
 
-### Pi Querying Package database
+### Pi Querying Package Database
 ```text
     $ pi -Q      #queries the local package database
     $ pi -s      #sync database
@@ -95,7 +95,7 @@ For more option about querying:
 ```
 Options:
 ```text
--b, --dbpath <path>  set an alternate database location
+  -b, --dbpath <path>  set an alternate database location
   -c, --changelog      view the changelog of a package
   -d, --deps           list packages installed as dependencies [filter]
   -e, --explicit       list packages explicitly installed [filter]
@@ -163,7 +163,7 @@ To verify the presence of the files installed by a package:
 
 >Passing the `k` flag twice will perform a more thorough check.
 
-### Cleaning the Package cache
+### Cleaning the Package Caches
 Pi stores its downloaded packages in `/var/cache/pacman/pkg/` and does not remove the old or uninstalled versions automatically. This has some advantages:
 
 1. It allows to **downgrade** a package without the need to retrieve the previous version through other means, such as the **Arch Linux Archive.**
@@ -199,7 +199,7 @@ To remove all files from the cache, use the clean switch twice, this is the most
 <p style="color:#E13814;">Warning :</p>
 
 >One should avoid deleting from the cache all past versions of installed packages and all uninstalled packages unless one desperately needs to free some disk space. This will prevent downgrading or reinstalling packages without downloading them again.
-
+### Others
 Operations:
 
 ```text

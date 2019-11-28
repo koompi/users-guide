@@ -2,7 +2,6 @@
 
 > Noted: To do all these basic commands below, you must be in the terminal:
 
-
 To show the directory you are currently in:
 
 ```
@@ -51,7 +50,6 @@ Output :
 ```
 
 Output :
-basic.md
 ```
     [koompi@koompi-pc Documents]$
 ```
@@ -177,7 +175,7 @@ If you want to search for the locateion of the file, you can use **locate**:
 
 - The **echo** command helps us move some data, usually text into file.For example, if you want to create a new text file or add to an already made text file, you just need to type in, **“echo Hello, This is Pionux. >> new.txt”**.
 
-### Cat
+### cat
 
 - **cat** is the command for showing the contents in file. It is usually used to easily view programs. 
 ```

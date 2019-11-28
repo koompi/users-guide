@@ -13,7 +13,7 @@ List all packages in the **package group** named group: `pi -Sg group`
 ## Removing unused packages (orphans)
 For recursively removing orphans and their configuration files:
 ```
-# pi -Rns $(pi -Qtdq)
+    # pi -Rns $(pi -Qtdq)
 ```
 If no orphans were found pacman outputs `error: no targets specified`. This is expected as no arguments were passed to `pi -Rns`.
 
@@ -25,6 +25,12 @@ If you want to backup your system configuration files you could copy all files i
 
 Running this command with root permissions will ensure that files readable only by root (such as /etc/sudoers) are included in the output.
 
+## Listing all changed files from packages
+If you are suspecting file corruption (e.g. by software/hardware failure), but are unsure if files were corrupted, you might want to compare with the hash sums in the packages. 
+```
+    # paccheck --md5sum --quiet
+```
+
 ## Backup the pi database
 The following command can be used to backup the local pi database:
 ```
@@ -35,11 +41,7 @@ The following command can be used to backup the local pi database:
 
 > If the pi database files are corrupted, and there is no backup file available, there exists some hope of rebuilding the pi database
 
-## Listing all changed files from packages
-If you are suspecting file corruption (e.g. by software/hardware failure), but are unsure if files were corrupted, you might want to compare with the hash sums in the packages. 
-```
-    # paccheck --md5sum --quiet
-```
+
 
 ## Reinstalling all packages
 To reinstall all native packages, use:
