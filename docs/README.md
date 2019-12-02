@@ -1,12 +1,11 @@
 # Table of Contents
 
 *    [Commands](commands/basic.md)
-       *   [Basic Commands](commands/basic.md)
-       *   [Package Commands](commands/package.md)
-       *   [Pi Installation Commands](commands/pi-installation.md)
-       *   [Pi Commands](commands/pi.md)
-       *   [Root](commands/root.md)  
-
+       *  [Basic Commands](commands/basic.md)
+       *  [Packages](commands/package.md)
+       *  [Password](commands/password.md)
+       *  [Pi or Pacman](commands/pi.md)    
+       * [Root](commands/root.md)
 *   [Contribute](contributor/MAINTAINERS.md)
 
 *   [Installation](installation/README.md)
